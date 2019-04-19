@@ -71,7 +71,7 @@ function checkCashRegister(price, cash, cid) {
   }
 
   result.change = updatedChangeArray.filter(element => {
-    return element[1] < 0;
+    return element[1] != 0;
   });
 
   result.change = updatedChangeArray;
